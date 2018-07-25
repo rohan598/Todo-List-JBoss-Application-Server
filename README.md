@@ -34,7 +34,7 @@ Following steps need to be followed to smoothly run the project.
 **4**. Press next twice and when JBoss runtime page opens, download and install runtime. 
 	After downloading and installing it press finish.
 
-**5**. Open the Wildfly 10.x folder 
+**5**. Open the Wildfly 10.x folder (on your computer) 
 
 	i. in command-propmt for windows user, go to "bin" folder and run add-user.bat file 
 		a. you will be asked which kind of user, press a for management user
@@ -66,7 +66,7 @@ Following steps need to be followed to smoothly run the project.
 		            <driver name="mysql" module="com.mysql">
                         <driver-class>com.mysql.jdbc.Driver</driver-class>
                     </driver>
-        (THIS STEP IS VERY IMPORTANT FOR RUNNING THE PROJECT)
+        **(THIS STEP IS VERY IMPORTANT FOR RUNNING THE PROJECT)**
 
 **7**. Open the Wildfly 10.x folder again, wherever it has been downloaded on your computer, and 
 
@@ -78,9 +78,6 @@ Following steps need to be followed to smoothly run the project.
 	
 	iv. Go to main folder add module.xml file and mysql-connector-java-5.1.29-bin.jar,
 	 	which can found in the contents of the CD
-
-		(NOTE: NO OTHER MYSQL CONNECTOR CAN BE USED SO ENSURE THAT THE ONE WHICH 
-			COMES WITH THE CD HAS BEEN ADDED TO THE main FOLDER)
 
 **8**. Open mysql in console (terminal) or MySQL Workbench and 
 
@@ -123,7 +120,7 @@ Following steps need to be followed to smoothly run the project.
 
 
 **10**. Go to Eclipse IDE and import a new project from WAR file, this .war file can be 
-	found in the contents of the CD.
+	found in the src folder.
 
 
 **11**. Then, right click on UserTodoList, select run as-> run on server->Wildfly 10.x 
