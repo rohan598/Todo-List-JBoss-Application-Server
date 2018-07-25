@@ -19,25 +19,22 @@ Following are the softwares use in this project along with their respective vers
 
 Following steps need to be followed to smoothly run the project.
 **(EXCEPT STEP 5 ALL OTHER STEPS ARE SAME FOR ALL THE THREE OS, Windows, MacOS, Ubuntu)**
-**
-1**. Download Eclipse IDE for Java EE developers (version EE Oxygen)
+
+**1**. Download Eclipse IDE for Java EE developers (version EE Oxygen)
+
 	i: Java SE, run time is 1.8.0_131 or simply java version "1.8.0_131" or any 
 	other 1.8.x version
 
-**
-2**. Go to market place in the help menu of the Eclipse IDE and download JBoss Tools 
+**2**. Go to market place in the help menu of the Eclipse IDE and download JBoss Tools 
 	4.5.3.Final and select all modules for installation.
 
-**
-3**. Add a new JBoss (wildfly 10.x) server by right clicking, going to new->server->JBoss 
+**3**. Add a new JBoss (wildfly 10.x) server by right clicking, going to new->server->JBoss 
 	Community->Wildfly 10.x. 
 
-**
-4**. Press next twice and when JBoss runtime page opens, download and install runtime. 
+**4**. Press next twice and when JBoss runtime page opens, download and install runtime. 
 	After downloading and installing it press finish.
 
-**
-5**. Open the Wildfly 10.x folder 
+**5**. Open the Wildfly 10.x folder 
 
 	i. in command-propmt for windows user, go to "bin" folder and run add-user.bat file 
 		a. you will be asked which kind of user, press a for management user
@@ -58,8 +55,7 @@ Following steps need to be followed to smoothly run the project.
 		using the snippet: sh add-user.sh
 		Follow all the steps a-g given above
 
-**
-6**. Open the Wildfly 10.x folder, wherever it has been downloaded on your computer, and 
+**6**. Open the Wildfly 10.x folder, wherever it has been downloaded on your computer, and 
 
 	i. Go standalone->configuration and open standalone.xml in a text editor.
 	
@@ -70,11 +66,9 @@ Following steps need to be followed to smoothly run the project.
 		            <driver name="mysql" module="com.mysql">
                         <driver-class>com.mysql.jdbc.Driver</driver-class>
                     </driver>
-
         (THIS STEP IS VERY IMPORTANT FOR RUNNING THE PROJECT)
 
-**
-7**. Open the Wildfly 10.x folder again, wherever it has been downloaded on your computer, and 
+**7**. Open the Wildfly 10.x folder again, wherever it has been downloaded on your computer, and 
 
 	i. Go to modules->system->layers->base->com
 	
@@ -88,8 +82,7 @@ Following steps need to be followed to smoothly run the project.
 		(NOTE: NO OTHER MYSQL CONNECTOR CAN BE USED SO ENSURE THAT THE ONE WHICH 
 			COMES WITH THE CD HAS BEEN ADDED TO THE main FOLDER)
 
-**
-8**. Open mysql in console (terminal) or MySQL Workbench and 
+**8**. Open mysql in console (terminal) or MySQL Workbench and 
 
 	i. Execute createDB.sql file, to create the required Database
 	
@@ -97,8 +90,7 @@ Following steps need to be followed to smoothly run the project.
 	
 	iii. Ensure that it is running in localhost:3306
 
-**
-9**. Go to localhost:9990, wildfly management console and enter your username and password 
+**9**. Go to localhost:9990, wildfly management console and enter your username and password 
 	as you had entered in step 5b and 5c respectively.
 
 	i. go to Configuration->Datasources->Non-XA 
